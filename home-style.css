@@ -1,0 +1,135 @@
+/* ----home---- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+.home-container {
+    margin: 0 auto;
+    width: 790px;
+    display: grid;
+}
+.home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    grid-area: header;
+}
+.home-title :nth-child(1) {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.des {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #1a1a1a;
+}
+.btn-add :first-child {
+    background-color: red;
+    border-radius: 3px;
+    border: none;
+    padding: 0.1rem;
+}
+.home-tasks-total {
+    grid-area: tasks-total;
+    margin-bottom: 0.5rem;
+}
+.task-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid gray;
+}
+.task-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.tasks-title :nth-child(1) {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.task {
+    border-radius: 0.5rem;
+    box-shadow: 0px 3px 5px 3px #0051ff10;
+    padding: 1.5rem;
+    position: relative;
+}
+.task :nth-child(1) {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.circle-work {
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #007bff;
+    border-radius: 0.5rem;
+    top: 1rem;
+    right: 1rem;
+}
+
+.circle-personal {
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #37ff00;
+    border-radius: 0.5rem;
+    top: 1rem;
+    right: 1rem;
+}
+
+.circle-shopping {
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #b700ff;
+    border-radius: 0.5rem;
+    top: 1rem;
+    right: 1rem;
+}
+.circle-health {
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #ff0000;
+    border-radius: 0.5rem;
+    top: 1rem;
+    right: 1rem;
+}
+.home-task-times {
+    grid-area: time;
+    margin-top: 3rem;
+}
+
+.time {
+    display: flex;
+    position: relative;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+.time :nth-child(1) {
+    flex: 1;
+    font-size: 1.5rem;
+}
+.time :nth-child(2) {
+    flex: 11;
+    height: 0;
+    border-top: 1px solid black;
+    align-self: center;
+}
+.home-container {
+    grid-template-areas: 
+    "header header header header"
+    ". tasks-total tasks-total tasks-total"
+    "time time time time";
+}
+
+
