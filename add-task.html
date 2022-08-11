@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add-task-style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add-task-style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="add-task-container">
+        <div class="header flex">
+            <a href="home.html"><img src="./assets/arrow-left.png" alt=""></a>
+            <input type="text" class="search" placeholder="Add task">
+        </div>
+        <div class="date flex">
+            <label for="date" class="label">Choose date</label>
+            <select type="date" name="date" id="date" class="select-box">
+                <option value="">29 Jul 2022</option>
+                <option value="">30 Jul 2022</option>
+            </select>
+        </div>
+        <div class="time flex">
+            <label for="time" class="label">Choose time</label>
+            <select name="time" id="time" class="select-box">
+                <option value="">13:00 - 14:00</option>
+                <option value="">14:00 - 15:00</option>
+            </select>
+        </div>
+        <div class="type flex">
+            <span class="label">Choose task type</span>
+            <div class="select-task-type">
+                <div>
+                    <input type="radio" id="work" name="task-type" />
+                    <label for="work" class="work">Work</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="personal" name="task-type" />
+                    <label for="personal" class="personal">Personal</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="shopping" name="task-type" />
+                    <label for="shopping" class="shopping">Shopping</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="health" name="task-type" />
+                    <label for="health" class="health">Health</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="other" name="task-type" />
+                    <label for="other" class="other">Other</label>
+                </div>
+            </div>
+        </div>
+        <div class="description flex">
+            <label for="description" class="label">write description</label>
+            <input type="text" id="description" name="description" placeholder="Description" class="des-input"/>
+        </div>
+        <div class="line"></div>
+        <div class="add-task">
+            <button class="add-btn" disabled>add task</button>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

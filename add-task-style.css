@@ -1,0 +1,125 @@
+/*---add-task----*/
+body {
+    font-size: 62.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.add-task-container {
+    margin: 0 auto;
+    width: 790px;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1rem;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+ grid-column: 1 / 5;
+}
+.header :nth-child(1) {
+    background-color: inherit;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.header :nth-child(2) {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+::placeholder {
+    color: lightgray;
+}
+.date {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+.label {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.select-box {
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+.time {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+.type {
+    grid-row: 4 / 5;
+    grid-column: 2 / 5;
+}
+.select-task-type {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    justify-items: center;
+    gap: 1rem;
+}
+.select-task-type input[type="radio"] {
+    display: none;
+}
+.select-task-type label {
+    display: inline-block;
+    font-weight: lighter;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+}
+.select-task-type input[type="radio"]:checked + label {
+    opacity: 0.7;
+}
+.work {
+    background-color: #007bff;
+}
+.personal {
+    background-color: #39a51a;
+}
+.shopping {
+    background-color: #c947fd;
+}
+.health {
+    background-color: #ff0000;
+}
+.other {
+    background-color: blueviolet;
+}
+.description {
+    grid-row: 5 / 6;
+    grid-column: 2 / 5;
+}
+.des-input {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.line {
+    border-top: 1px solid #000000;
+    grid-row: 14 / 15;
+    grid-column: 2 / 5;
+}
+
+.add-task {
+    grid-row: 25 / 26;
+    grid-column: 2 / 5;
+}
+.add-btn {
+    border: none;
+    background-color: lightgrey;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1.5rem;
+}
+
+
