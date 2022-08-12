@@ -64,44 +64,28 @@ body {
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
-
-.circle-work {
+.circle {
     position: absolute;
     width: 0.8rem;
     height: 0.8rem;
-    background-color: #007bff;
     border-radius: 0.5rem;
     top: 1rem;
     right: 1rem;
 }
-
-.circle-personal {
-    position: absolute;
-    width: 0.8rem;
-    height: 0.8rem;
-    background-color: #39a51a;
-    border-radius: 0.5rem;
-    top: 1rem;
-    right: 1rem;
-}
-
-.circle-shopping {
-    position: absolute;
-    width: 0.8rem;
-    height: 0.8rem;
-    background-color: #c947fd;
-    border-radius: 0.5rem;
-    top: 1rem;
-    right: 1rem;
-}
-.circle-health {
-    position: absolute;
-    width: 0.8rem;
-    height: 0.8rem;
+.health {
     background-color: #ff0000;
-    border-radius: 0.5rem;
-    top: 1rem;
-    right: 1rem;
+}
+.personal {
+    background-color: #39a51a;
+}
+.shopping {
+    background-color: #c947fd;
+}
+.work {
+    background-color: #007bff;
+}
+.other {
+    background-color: blueviolet;
 }
 .home-task-times {
     grid-area: time;
