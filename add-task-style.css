@@ -105,12 +105,12 @@ body {
 
 .line {
     border-top: 1px solid #000000;
-    grid-row: 14 / 15;
+    grid-row: 6 / 7;
     grid-column: 2 / 5;
 }
 
 .add-task {
-    grid-row: 25 / 26;
+    grid-row: 9 / 10;
     grid-column: 2 / 5;
 }
 .add-btn {
