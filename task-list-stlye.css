@@ -33,6 +33,9 @@ body {
     outline: none;
     font-size: 2rem;
 }
+.btn-search {
+    cursor: pointer;
+}
 .magnifier {
     width: 40px;
     height: 40px;
@@ -40,6 +43,7 @@ body {
 .trash {
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 .close {
     width: 25px;
@@ -56,13 +60,14 @@ body {
 .item-selected > div {
     padding: 1rem;
 }
-.item-selected > :first-child {
+.item-selected > :nth-child(2) {
     flex-direction: column;
-    flex: 11 11 90%;
+    flex: 95%;
     background-color: pink;
 }
 .item-selected > :last-child {
-    flex: 1 1 10%;
+    flex: 5%;
+    justify-content: center;
     background-color: red;
 }
 .list {
