@@ -35,14 +35,9 @@ const count = tasks.reduce(function(obj , item) {
     return obj;
 }, tasksCount);
 
-
-console.log(count);
-tasks.filter(function(task) {
-    
-})
 //show tasks
 totalTasks.innerText = tasks.length;
-leftTasks.innerText = tasks.leftTasks;
+leftTasks.innerText = tasksCount.leftTasks;
 workTasks.innerText = `${tasksCount.work} tasks`;
 personalTasks.innerText = `${tasksCount.personal} tasks`;
 shoppingTasks.innerText = `${tasksCount.shopping} tasks`;
@@ -70,5 +65,3 @@ for(let i = 0; i < 24; i++) {
                                     `;
     timeBox.appendChild(li);
 }
-
-

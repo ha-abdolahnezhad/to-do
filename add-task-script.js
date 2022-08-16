@@ -1,6 +1,7 @@
 //---- add task ----
 const btnAdd = document.querySelector('.add-btn');
 let type = "";
+let taskArr = [];
 function setType(element) {
     type = element.value;
 }
@@ -20,7 +21,7 @@ btnAdd.addEventListener("click", function(){
     
     console.log(taskAddObj);
 
-    const taskArr = JSON.parse(localStorage.getItem('task') || '[]');
+    taskArr = JSON.parse(localStorage.getItem('task') || '[]');
     taskArr.push(taskAddObj);
     localStorage.setItem('task', JSON.stringify(taskArr));
 });

@@ -23,7 +23,7 @@ btnClose.addEventListener("click", function() {
 // load data
 const tasks = JSON.parse(localStorage.getItem('task') || '[]');
 const list = document.querySelector(".list");
-tasks.forEach(element => {
+tasks.forEach(function(element, index) {
     const li = document.createElement("li");
     li.classList.add('list-item');
     li.innerHTML = `<div class="edit-block">
@@ -37,7 +37,9 @@ tasks.forEach(element => {
                     </div>
                     <div class="circle ${element.type}"></div>
                     <div class="delete-block">
-                        <img class="trash" src="./assets/trash.png" alt="">
+                        <button class="btn-remove" value="${index}" onclick="remove(this)">
+                            <img class="trash" src="./assets/trash.png" alt="">
+                        </button>
                     </div>`;
     list.appendChild(li);
 });
@@ -46,7 +48,7 @@ tasks.forEach(element => {
 listItem = document.querySelectorAll(".list-item");
 editElement = document.querySelectorAll(".edit-block");
 circleElement = document.querySelectorAll(".circle");
-trashIcon = document.querySelectorAll(".trash");
+trashIcon = document.querySelectorAll(".delete-block");
 listItem.forEach(function(element, index) {
     trashIcon[index].style.display = "none";
     element.addEventListener("mouseenter", function() {
@@ -65,5 +67,9 @@ listItem.forEach(function(element, index) {
     });
 });
 
-
-
+//remove item
+function remove(element) {
+    tasks.splice(element.value, 1);
+    localStorage.setItem('task', JSON.stringify(tasks));
+    location.reload();
+}

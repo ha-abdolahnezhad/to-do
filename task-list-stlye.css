@@ -45,6 +45,10 @@ body {
     height: 40px;
     cursor: pointer;
 }
+.btn-remove {
+    border: none;
+    background-color: inherit;
+}
 .close {
     width: 25px;
     height: 25px;
@@ -62,12 +66,11 @@ body {
 }
 .item-selected > :nth-child(2) {
     flex-direction: column;
-    flex: 95%;
+    flex: 99%;
     background-color: pink;
 }
 .item-selected > :last-child {
-    flex: 5%;
-    justify-content: center;
+    flex: 1%;
     background-color: red;
 }
 .list {
